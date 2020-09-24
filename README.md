@@ -95,7 +95,6 @@ There are 40 different output formats:
 |`HMS`|579|
 |`HHMM`|0507|
 |`HHMMSS`|050709|
-|`H:MM:SS_APM`|5:07:09am|
 |`H_APM`|5am|
 |`APM`|am|
 
@@ -104,6 +103,7 @@ There are 40 different output formats:
 |:-:	|:-:	|
 |`HH:MM`|05:07|
 |`HH:MM:SS`|05:07:09|
+|`H:MM:SS_APM`|5:07:09am|
 |`H:MM_APM`|5:07am|
 
 > The `seperator` parameter has no effect to the output. An empty string `""` is expected when you wish to return any of the above output format.
