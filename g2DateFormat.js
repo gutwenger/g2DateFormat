@@ -36,8 +36,17 @@ function g2DateFormat(output=String, seperator=String, input=0, timezone_offset=
                     ? new Date(input)
                     : false;
     if (isNaN(now)) return false;
-    
-    let inputDate = timezone_offset > 0 ? new Date(now.getTime() + now.getTimezoneOffset() * 60000 + (timezone_offset * 1000)) : now;
+
+    // Timezone offset
+    let inputDate;
+    if (timezone_offset > 0) {
+        inputDate = new Date(now.getTime() + now.getTimezoneOffset() * 60000 + timezone_offset * 1000);
+    } else if (timezone_offset < 0) {
+        inputDate = new Date(now.getTime() + now.getTimezoneOffset() * 60000 + -Math.abs(timezone_offset * 1000));
+    } else {
+        now;
+    }
+
     let date = inputDate.getDate();
     let dateNum = inputDate.getDate() < 10 ? "0" + inputDate.getDate() : inputDate.getDate();
     let monthFull = monthList[inputDate.getMonth()];
@@ -53,6 +62,11 @@ function g2DateFormat(output=String, seperator=String, input=0, timezone_offset=
     let secondsNum = seconds < 10 ? "0" + seconds : seconds;
     let hoursAPM = hours < 12 ? hours : hours - 12;
     let APM = hours < 12 ? "am" : "pm";
+
+    // Timezone Offset
+    if (timezone_offset < 0) {
+
+    }
 
     // Output Formats
     let outputFormat = {

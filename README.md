@@ -1,6 +1,6 @@
 # g2DateFormat
 
-This library attemps to provide an easier way to retrieve datetime data by manipulating JS date and time.
+This library attempts to provide an easier way to retrieve datetime data by manipulating JS date and time.
 
 
 ## Getting Started
