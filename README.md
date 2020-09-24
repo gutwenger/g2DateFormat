@@ -45,9 +45,9 @@ Expected output:
 2020.09.01
 ```
 
-### Output Format
+## Output Formats
 There are 40 different output formats:
-* Basic Formats
+### Basic Formats
 
 |Parameter|Output|
 | :-:	| :-:	|
@@ -64,7 +64,7 @@ There are 40 different output formats:
 |`D`|1|
 |`DD`|01|
 
-* Date
+### Date
 
 |Parameter|Output|
 |:-:	|:-:	|
@@ -81,7 +81,7 @@ There are 40 different output formats:
 |`DMYYYY`|192020|
 |`DM`|19|
 
-* Time
+### Time
 
 |Parameter|Output|
 |:-:	|:-:	|
