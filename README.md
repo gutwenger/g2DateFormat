@@ -10,11 +10,10 @@
     <li><a href="#">Timezone Offset</a></li>
 </ul>
 
-
-
-
-## Getting Started
-There are two ways to utilise this library:
+<div id="getting_started">
+    <h2>Getting Started</h2>
+    <p>There are two ways to utilise this library:<p>
+</div>
 
 ### Install
 ```
