@@ -1,0 +1,22 @@
+{
+  "name": "g2dateformat",
+  "version": "1.0.0",
+  "description": "An easier solution to retrieve datetime data",
+  "main": "g2DateFormat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gutwenger/g2DateFormat.git"
+  },
+  "keywords": [
+    "datetime"
+  ],
+  "author": "Fremont Cheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gutwenger/g2DateFormat/issues"
+  },
+  "homepage": "https://github.com/gutwenger/g2DateFormat#readme"
+}

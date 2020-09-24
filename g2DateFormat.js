@@ -28,7 +28,15 @@ function g2DateFormat(output=String, seperator=String, input=0, timezone_offset=
     ];
 
     // Retrieve values
-    let now = input > 0 ? new Date(input * 1000) : new Date();
+    let now = typeof input === "number"
+                ? input > 0
+                    ? new Date(input * 1000)
+                    : new Date()
+                : typeof input === "string"
+                    ? new Date(input)
+                    : false;
+    if (isNaN(now)) return false;
+    
     let inputDate = timezone_offset > 0 ? new Date(now.getTime() + now.getTimezoneOffset() * 60000 + (timezone_offset * 1000)) : now;
     let date = inputDate.getDate();
     let dateNum = inputDate.getDate() < 10 ? "0" + inputDate.getDate() : inputDate.getDate();
