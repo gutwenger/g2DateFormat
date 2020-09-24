@@ -1,6 +1,6 @@
 {
   "name": "g2dateformat",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "An easier solution to retrieve datetime data",
   "main": "g2DateFormat.js",
   "scripts": {
