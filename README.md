@@ -3,7 +3,7 @@
         G2DateFormat
     </h1>
     <p>This library attemps to provide an easier way to retrieve datetime data by manipulating JS date and time.<p>
-    <h3 class="text-decoration: underline;">Content:</h3>
+    <h3 style="text-decoration: underline">Content:</h3>
     <ul>
         <li>
             <a href="#getting_started">Getting Started</a>
