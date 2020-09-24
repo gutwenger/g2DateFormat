@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/gutwenger/g2DateFormat/issues"
   },
-  "homepage": "https://github.com/gutwenger/g2DateFormat#readme"
+  "homepage": "https://github.com/gutwenger/g2DateFormat#readme",
+  "dependencies": {}
 }

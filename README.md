@@ -2,6 +2,10 @@
 
 This library attempts to provide an easier way to retrieve datetime data by manipulating JS date and time.
 
+This library is **easy to use** and **highly customisable**!
+
+Not only can this library help you to acquire current datatime, it can also retrieve specific datetime with timezone offset!
+
 
 ## Getting Started
 ### Install
@@ -36,11 +40,15 @@ This function has 4 parameters:
 
 #### Example
 ```
-let example = g2DateFormat("YYYYMMDD", ".", 0, 0);
+let current_date = g2DateFormat("YYYYMMDD", ".", 0, 0);
+let current_time = g2DateFormat("HHMMSS", ":", 0, 0);
+console.log(`Current Date: ${current_date}`);
+console.log(`Current Time: ${current_time}`);
 ```
 Expected output:
 ```
-2020.09.01
+Current Date: 2020.09.25
+Current Time: 12:30:33
 ```
 
 ## Data Type of the returned value
