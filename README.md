@@ -51,9 +51,9 @@ There are 40 different output formats:
 
 |Parameter|Output|
 | :-:	| :-:	|
-|`timestamp`|1598936829|
-|`full_date`|1 September 2020|
-|`full_date_DD`|01 September 2020|
+|`timestamp`|`1598936829`|
+|`full_date`|`1 September 2020`|
+|`full_date_DD`|`01 September 2020`|
 |`full_date_weekday`|1 September 2020, Sunday|
 |`full_date_DD_weekday`|01 September 2020, Sunday|
 |`month_year`|September 2020|
