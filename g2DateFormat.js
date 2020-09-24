@@ -44,7 +44,7 @@ function g2DateFormat(output=String, seperator=String, input=0, timezone_offset=
     } else if (timezone_offset < 0) {
         inputDate = new Date(now.getTime() + now.getTimezoneOffset() * 60000 + -Math.abs(timezone_offset * 1000));
     } else {
-        now;
+        inputDate = now;
     }
 
     let date = inputDate.getDate();
