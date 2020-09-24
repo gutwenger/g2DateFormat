@@ -1,6 +1,16 @@
-# g2DateFormat
+<h1 class="title">
+    G2DateFormat
+</h1>
+<p>This library attemps to provide an easier way to retrieve datetime data by manipulating JS date and time.<p>
+<label>Content:</label>
+<ul>
+    <li><a href="#getting_started">Getting Started</a><li>
+    <li><a href="#">Output Formats</a><li>
+    <li><a href="#">Input Datetime Value</a><li>
+    <li><a href="#">Timezone Offset</a><li>
+</ul>
 
-This library attemps to provide an easier way to retrieve datetime data by manipulating JS date and time.
+
 
 
 ## Getting Started
