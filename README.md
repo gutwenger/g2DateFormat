@@ -1,19 +1,35 @@
-<h1 class="title">
-    G2DateFormat
-</h1>
-<p>This library attemps to provide an easier way to retrieve datetime data by manipulating JS date and time.<p>
-<label>Content:</label>
-<ul>
-    <li><a href="#getting_started">Getting Started</a></li>
-    <li><a href="#">Output Formats</a></li>
-    <li><a href="#">Input Datetime Value</a></li>
-    <li><a href="#">Timezone Offset</a></li>
-</ul>
-
+<div id="header">
+    <h1 class="title">
+        G2DateFormat
+    </h1>
+    <p>This library attemps to provide an easier way to retrieve datetime data by manipulating JS date and time.<p>
+    <label>Content:</label>
+    <ul>
+        <li>
+            <a href="#getting_started">Getting Started</a>
+            <ul>
+                <li><a href="#install">Install</a></li>
+                <li><a href="#usage">Usage</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Output Formats</a>
+            <ul>
+                <li><a href="#basic_formats">Basic Formats</a></li>
+                <li><a href="#date">Date</a></li>
+                <li><a href="#time">Time</a></li>
+                <li><a href="#time_sep">Time with Seperator</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Input Datetime Value</a></li>
+        <li><a href="#">Timezone Offset</a></li>
+    </ul>
+</div>
 <div id="getting_started">
     <h2>Getting Started</h2>
     <p>There are two ways to utilise this library:<p>
 </div>
+
 
 ### Install
 ```
