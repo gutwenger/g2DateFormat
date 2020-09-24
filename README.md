@@ -11,7 +11,15 @@ There are two ways to utilise this library:
 $ npm install g2DateFormat --save
 ```
 
-### Download and Import
+### Usage
+```
+import g2DateFormat from 'g2DateFormat';
+
+console.log(g2DateFormat("full_date_weekday", '', 0, 0));
+
 ```
 
+Expected outcome:
+```
+1 September 2020, Sunday
 ```
