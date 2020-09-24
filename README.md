@@ -45,11 +45,17 @@ Expected output:
 2020.09.01
 ```
 
+## Data Type of the returned value
+Return value:
+```
+String
+```
+
 ## Output Formats
 There are 40 different output formats:
 ### Basic Formats
 
-|Parameter|Output|
+|format|Output|
 | :-:	| :-:	|
 |`timestamp`|`1598936829`|
 |`full_date`|`1 September 2020`|
@@ -66,7 +72,7 @@ There are 40 different output formats:
 
 ### Date
 
-|Parameter|Output|
+|format|Output|
 |:-:	|:-:	|
 |`YYYYMM`|`202009`|
 |`YYYYMMDD`|`20200901`|
@@ -83,7 +89,7 @@ There are 40 different output formats:
 
 ### Time
 
-|Parameter|Output|
+|format|Output|
 |:-:	|:-:	|
 |`H`|`5`|
 |`M`|`7`|
@@ -99,7 +105,7 @@ There are 40 different output formats:
 |`APM`|`am`|
 
 ### Time with Sperator
-|Parameter|Output|
+|format|Output|
 |:-:	|:-:	|
 |`HH:MM`|`05:07`|
 |`HH:MM:SS`|`05:07:09`|
@@ -131,3 +137,49 @@ Expected output:
 05:07:09
 ```
 
+
+## Input datetime Value
+It is the same as creating a new Date object with the new Date() constructor.
+
+There are 4 ways to pass this argument:
+```
+0 // default value, which will return the current datetime
+year, month, day, hours, minutes, seconds, milliseconds
+milliseconds
+date string
+```
+
+Example:
+```
+g2DateFormat("YYYYMMDD", "-", 0, 0); // 2020-09-01
+g2DateFormat("HHMMSS", ":", "2015-01-01 12:05:35", 0); // 12:05:35
+g2DateFormat("YYYYMMDD", "-", 1598936829, 0); // 2020-09-01
+g2DateFormat("YYYYMMDD", "2000.05.30", 0, 0); // 2000.05.30
+```
+
+## Timezone Offset
+If you wish to convert the datetime to a specific timezone, you can simply pass the timezone offset (in UNIX format) as the 4th argument.
+
+### Example
+Original Time (GMT+08:00, Timezone Offset in Seconds: +28800):
+```
+2020-01-01 11:00:00
+```
+
+London Time (GMT+01:00, Timezone Offset in Seconds: +3600);
+```
+g2DateFormat("YYYYMMDD", ":", 1577847600, 3600);
+// Output: 2020-01-01
+
+g2DateFormat("HHMMSS", ":", 1577847600, 3600);
+// Output: 04:00:00
+```
+
+New York Time (GMT-04:00, Timezone Offset in Seconds: -14400);
+```
+g2DateFormat("YYYYMMDD", "-", 1577847600, -14400);
+// Output: 2019-12-31
+
+g2DateFormat("HHMMSS", ":", 1577847600, -14400);
+// Output: 23:00:00
+```
