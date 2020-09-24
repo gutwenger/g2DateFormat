@@ -34,7 +34,7 @@ This function has 4 parameters:
 * input datetime value (default=0)
 * timezone offset (default=0)
 
-> The first and the second parameters have no default value, the function will return `false` if any of them is left blank.
+> The first and the second parameter have no default value, the function will return `false` if any of them is left blank.
 
 #### Example
 ```
@@ -85,14 +85,49 @@ There are 40 different output formats:
 
 |Parameter|Output|
 |:-:	|:-:	|
-|``|	|
-|``|	|
-|``|	|
-|``|	|
-|``|	|
-|``|	|
-|``|	|
-|``|	|
-|``|	|
-|``|	|
+|`H`|5|
+|`M`|7|
+|`S`|9|
+|`HH`|05|
+|`MM`|07|
+|`SS`|09|
+|`HM`|57|
+|`HMS`|579|
+|`HHMM`|0507|
+|`HHMMSS`|050709|
+|`H:MM:SS_APM`|5:07:09am|
+|`H_APM`|5am|
+|`APM`|am|
+
+### Time with Sperator
+|Parameter|Output|
+|:-:	|:-:	|
+|`HH:MM`|05:07|
+|`HH:MM:SS`|05:07:09|
+|`H:MM_APM`|5:07am|
+
+> The `seperator` parameter has no effect to the output. An empty string `""` is expected when you wish to return any of the above output format.
+
+> That means no matter what you pass into the `seperator` parameter, the output will always be the format stipulated by the `output_format` parameter.
+
+#### Example
+**Recommended:**
+```
+let example = g2DateFormat("HH:MM:SS", "", 0, 0);
+console.log(example);
+```
+Expected output:
+```
+05:07:09
+```
+
+**Another example:**
+```
+let example = g2DateFormat("HH:MM:SS", "-", 0, 0);
+console.log(example);
+```
+Expected output:
+```
+05:07:09
+```
 
