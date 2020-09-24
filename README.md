@@ -28,6 +28,11 @@
 <div id="getting_started">
     <h2>Getting Started</h2>
     <p>There are two ways to utilise this library:<p>
+    <div id="install">
+        <code>npm install g2DataFormat --save</code>
+    </div>
+    <div id="usage">
+    </div>
 </div>
 
 
