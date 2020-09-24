@@ -16,7 +16,6 @@ $ npm install g2DateFormat --save
 import g2DateFormat from 'g2DateFormat';
 
 console.log(g2DateFormat("full_date_weekday", '', 0, 0));
-
 ```
 
 Expected outcome:
