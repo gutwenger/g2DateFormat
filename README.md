@@ -6,7 +6,7 @@ This library attempts to provide an easier way to retrieve datetime data by mani
 ## Getting Started
 ### Install
 ```
-$ npm install g2DateFormat --save
+npm install g2dateformat
 ```
 
 Then...
