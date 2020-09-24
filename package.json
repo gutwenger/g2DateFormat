@@ -1,6 +1,6 @@
 {
   "name": "g2dateformat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An easier solution to retrieve datetime data",
   "main": "g2DateFormat.js",
   "scripts": {
@@ -11,7 +11,10 @@
     "url": "git+https://github.com/gutwenger/g2DateFormat.git"
   },
   "keywords": [
-    "datetime", "JavaScript", "date", "time"
+    "datetime",
+    "JavaScript",
+    "date",
+    "time"
   ],
   "author": "Fremont Cheng",
   "license": "ISC",
