@@ -160,11 +160,13 @@ Example:
 g2DateFormat("YYYYMMDD", "-", 0, 0); // 2020-09-01
 g2DateFormat("HHMMSS", ":", "2015-01-01 12:05:35", 0); // 12:05:35
 g2DateFormat("YYYYMMDD", "-", 1598936829, 0); // 2020-09-01
-g2DateFormat("YYYYMMDD", "2000.05.30", 0, 0); // 2000.05.30
+g2DateFormat("YYYYMMDD", ".", "2000-05-30", 0); // 2000.05.30
 ```
 
 ## Timezone Offset
 If you wish to convert the datetime to a specific timezone, you can simply pass the timezone offset (in UNIX format) as the 4th argument.
+
+> This could be left blank and the return value will be the datetime data in your local timezone setting.
 
 ### Example
 Original Time (GMT+08:00, Timezone Offset in Seconds: +28800):
@@ -174,7 +176,7 @@ Original Time (GMT+08:00, Timezone Offset in Seconds: +28800):
 
 London Time (GMT+01:00, Timezone Offset in Seconds: +3600);
 ```
-g2DateFormat("YYYYMMDD", ":", 1577847600, 3600);
+g2DateFormat("YYYYMMDD", "-", 1577847600, 3600);
 // Output: 2020-01-01
 
 g2DateFormat("HHMMSS", ":", 1577847600, 3600);
